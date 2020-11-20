@@ -1,0 +1,13 @@
+{
+  "name": "smarttender-fonts",
+  "version": "1.0.0",
+  "description": "http://smarttender.biz/",
+  "scripts": {
+    "generate": "fantasticon"
+  },
+  "author": "smarttender.biz",
+  "license": "MIT",
+  "devDependencies": {
+    "fantasticon": "^1.0.16"
+  }
+}

@@ -1,0 +1,167 @@
+@icon-prefix: ~"@{css-prefix}-icon";
+
+@font-face {
+	font-family: "{{ name }}";
+	src: {{{ fontSrc }}};
+}
+.@{icon-prefix} {
+  display: inline-block;
+  font-family: '{{ name }}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*icon size width*/
+.@{icon-prefix}-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.@{icon-prefix}-2x {
+  font-size: 2em;
+}
+.@{icon-prefix}-3x {
+  font-size: 3em;
+}
+.@{icon-prefix}-4x {
+  font-size: 4em;
+}
+.@{icon-prefix}-5x {
+  font-size: 5em;
+}
+/*fixed width*/
+.@{icon-prefix}-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/*replace default bullets in unordered lists.*/
+.@{icon-prefix}-ul {
+  list-style-type: none;
+}
+.@{icon-prefix}-ul > li {
+  position: relative;
+}
+.@{icon-prefix}-li {
+  position: absolute;
+  left: -3.15em;
+  width: 2.15em;
+  top: 2.8em;
+  text-align: center;
+}
+.@{icon-prefix}-li.@{icon-prefix}-lg {
+  left: -1.85714286em;
+}
+
+/*icon rotate*/
+.@{icon-prefix}-spin {
+  -webkit-animation: smt-spin 2s infinite linear;
+  animation: smt-spin 2s infinite linear;
+}
+
+/*rotate with 8 steps*/
+.@{icon-prefix}-pulse {
+  -webkit-animation: smt-spin 1s infinite steps(8);
+  animation: smt-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes smt-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes smt-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/*rotate and flip icons*/
+.@{icon-prefix}-rotate-45 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.@{icon-prefix}-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.@{icon-prefix}-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.@{icon-prefix}-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.@{icon-prefix}-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.@{icon-prefix}-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .@{icon-prefix}-rotate-90,
+:root .@{icon-prefix}-rotate-180,
+:root .@{icon-prefix}-rotate-270,
+:root .@{icon-prefix}-flip-horizontal,
+:root .@{icon-prefix}-flip-vertical {
+  filter: none;
+}
+/*To stack multiple icons, use the smt-stack class on the parent, the smt-stack-1x for the regularly sized icon, and smt-stack-2x for the larger icon.
+You can even throw larger icon classes on the parent to get further control of sizing.*/
+.@{icon-prefix}-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.@{icon-prefix}-stack-1x,
+.@{icon-prefix}-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.@{icon-prefix}-stack-1x {
+  line-height: inherit;
+}
+.@{icon-prefix}-stack-2x {
+  font-size: 2em;
+}
+
+/*icons list*/
+{{#each codepoints}}
+.@{icon-prefix}-{{@key}}:before {
+  content: "\\{{ codepoint this }}";
+}
+{{/each}}
