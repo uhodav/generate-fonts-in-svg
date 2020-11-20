@@ -2,7 +2,7 @@
 
 > Генерация шрифта иконок [Smarttender](https://smarttender.biz/)
 
-<a href="https://github.com/uhodav/smarttender-fonts/dist/icon.html">Результат</a>
+<a href="https://htmlpreview.github.io/?https://github.com/uhodav/smarttender-fonts/blob/main/dist/icon.html#/bored">Результат</a>
 
 ```bash
 # Устанавливаем зависимости
