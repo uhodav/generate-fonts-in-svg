@@ -2,7 +2,7 @@
 
 > Генерация шрифта иконок [Smarttender](https://smarttender.biz/)
 
-**<a href="https://htmlpreview.github.io/?https://github.com/uhodav/smarttender-fonts/blob/main/dist/icon.html#/bored" target="_blank">Результат</a>**
+**<a href="https://htmlpreview.github.io/?https://github.com/uhodav/smarttender-fonts/blob/main/dist/index.html#/bored" target="_blank">Результат</a>**
 
 ```bash
 # Устанавливаем зависимости
@@ -18,17 +18,24 @@ $ npm run generate
 `fonts` можно забирать целиком.
 Стили из папки `styles` по необходимости
 
-<dl>
-    <dt>dist</dt>
-    <dd>fonts готовые шрифты</dd>
-    <dd>stylesготовые классы иконок</dd>
-    <dt>icons Папка с файлами svg для создания шрифта</dt>
-    <dt>template шаблоны для формирования</dt>
-    <dd>css.hbs Шаблон готового css</dd>
-    <dd>html.hbs Шаблон результирующего html (демонстрации)</dd>
-    <dd>less.hbs Шаблон стилей для компонента иконок</dd>
-    <dt>.fantasticonrc.js файл с настрйоками</dt>
-</dl>
++ **`dist`** содержит готовые шрифты и стили
+    - **`fonts`** готовые шрифты
+        - `SmarttenderFont.eot`
+        - `SmarttenderFont.svg`
+        - `SmarttenderFont.ttf`
+        - `SmarttenderFont.woff`
+        - `SmarttenderFont.woff2`
+    - `styles`стили иконок
+        - `icons.css`
+        - `icons.json` используется в storybook
+        - `icons.less` используется в компоненте иконок
+    - index.html файл демонстрации
++ **`icons`**             файлы svg для создания шрифта
++ **`template`**          шаблоны для формирования
+    - 'css.hbs' шаблон генерации 'icons.css' 
+    - 'html.hbs' шаблон генерации 'index.html'
+    - 'less.hbs' шаблон генерации 'icons.less' 
++ `.fantasticonrc.js` настройки
 
 
 Используется https://github.com/tancredi/fantasticon/
