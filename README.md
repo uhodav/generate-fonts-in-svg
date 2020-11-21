@@ -19,12 +19,15 @@ $ npm run generate
 Стили из папки `styles` по необходимости
 
 <dl>
-    <dt>`dist`</dt>
-    <dd>`fonts` готовые шрифты</dd>
-    <dd>`styles`готовые классы иконок</dd>
-    <dt>`icons`Папка с файлами svg для создания шрифта</dt>
-    <dt>`template`шаблоны для формирования</dt>
-    <dt>`.fantasticonrc.js` файл с настрйоками</dt>
+    <dt>dist</dt>
+    <dd>fonts готовые шрифты</dd>
+    <dd>stylesготовые классы иконок</dd>
+    <dt>icons Папка с файлами svg для создания шрифта</dt>
+    <dt>template шаблоны для формирования</dt>
+    <dd>css.hbs Шаблон готового css</dd>
+    <dd>html.hbs Шаблон результирующего html (демонстрации)</dd>
+    <dd>less.hbs Шаблон стилей для компонента иконок</dd>
+    <dt>.fantasticonrc.js файл с настрйоками</dt>
 </dl>
 
 
