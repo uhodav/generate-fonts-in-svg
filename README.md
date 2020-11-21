@@ -20,11 +20,11 @@ $ npm run generate
 
 <dl>
     <dt>`dist`</dt>
-    <dd>`fonts`</dd> готовые шрифты
-    <dd>`styles`</dd>готовые классы иконок
+    <dd>`fonts` готовые шрифты</dd>
+    <dd>`styles`готовые классы иконок</dd>
     <dt>`icons`Папка с файлами svg для создания шрифта</dt>
-    <dt>`template`/dt>шаблоны для формирования
-    <dt>`.fantasticonrc.js`/dt> файл с настрйоками
+    <dt>`template`шаблоны для формирования</dt>
+    <dt>`.fantasticonrc.js` файл с настрйоками</dt>
 </dl>
 
 
