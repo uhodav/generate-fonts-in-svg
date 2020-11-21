@@ -19,11 +19,11 @@ $ npm run generate
 Стили из папки `styles` по необходимости
 
 |-`dist`\
-|&nbsp;&nbsp;|- `fonts`        готовые шрифты\
-|&nbsp;&nbsp;|- `styles`       классы иконок\
-|- `icons`             файлы svg для создания шрифта\
-|- `template`          шаблоны для формирования\
-|- `.fantasticonrc.js` настройки
+>>|- `fonts`        готовые шрифты\
+>>|- `styles`       классы иконок\
+>|- `icons`             файлы svg для создания шрифта\
+>|- `template`          шаблоны для формирования\
+>|- `.fantasticonrc.js` настройки
 
 
 Используется https://github.com/tancredi/fantasticon/
