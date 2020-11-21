@@ -21,9 +21,9 @@ $ npm run generate
 >`icons`             файлы svg для создания шрифта\
 >`template`          шаблоны для формирования\
 >`.fantasticonrc.js` настройки\
->`dist`\
+>`dist`
 >> `fonts`        готовые шрифты\
->> `styles`       классы иконок\
+>> `styles`       классы иконок
 
 
 Используется https://github.com/tancredi/fantasticon/
