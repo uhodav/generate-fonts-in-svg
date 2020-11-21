@@ -2,7 +2,7 @@
 
 > Генерация шрифта иконок [Smarttender](https://smarttender.biz/)
 
-**<a href="https://htmlpreview.github.io/?https://github.com/uhodav/smarttender-fonts/blob/main/dist/index.html#/bored" target="_blank">Результат</a>**
+**<a href="https://htmlpreview.github.io/?https://github.com/uhodav/smarttender-fonts/blob/main/dist/demo.html#/bored" target="_blank">Результат</a>**
 
 ```bash
 # Устанавливаем зависимости
@@ -29,11 +29,11 @@ $ npm run generate
         - `icons.css`
         - `icons.json` используется в storybook
         - `icons.less` используется в компоненте иконок
-    - index.html файл демонстрации
+    - demo.html файл демонстрации
 + **`icons`**             файлы svg для создания шрифта
 + **`template`**          шаблоны для формирования
     - 'css.hbs' шаблон генерации 'icons.css' 
-    - 'html.hbs' шаблон генерации 'index.html'
+    - 'html.hbs' шаблон генерации 'demo.html'
     - 'less.hbs' шаблон генерации 'icons.less' 
 + `.fantasticonrc.js` настройки
 
