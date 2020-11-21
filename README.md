@@ -20,7 +20,7 @@ $ npm run generate
 
 >`icons`             файлы svg для создания шрифта\
 >`template`          шаблоны для формирования\
->`.fantasticonrc.js` настройки
+>`.fantasticonrc.js` настройки\
 >`dist`\
 >> `fonts`        готовые шрифты\
 >> `styles`       классы иконок\
