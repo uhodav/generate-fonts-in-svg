@@ -382,7 +382,7 @@ module.exports = {
     "diameter": 60006,
   },
   pathOptions: {
-    html: './dist/icon.html',
+    html: './dist/index.html',
     json: './dist/styles/icons.json',
     css: './dist/styles/icons.css',
     scss: './dist/styles/icons.less',
