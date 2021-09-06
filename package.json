@@ -1,11 +1,10 @@
 {
-  "name": "smarttender-fonts",
+  "name": "svg-fonts",
   "version": "1.0.0",
-  "description": "http://smarttender.biz/",
+  "description": "Svg font",
   "scripts": {
     "generate": "fantasticon"
   },
-  "author": "smarttender.biz",
   "license": "MIT",
   "devDependencies": {
     "fantasticon": "^1.0.16"
