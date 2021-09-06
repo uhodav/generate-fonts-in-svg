@@ -1,6 +1,6 @@
-# SmarttenderFont
+# SvgFont
 
-> Генерация шрифта иконок [Smarttender](https://smarttender.biz/)
+> Генерация шрифта иконок
 
 **<a href="https://htmlpreview.github.io/?https://github.com/uhodav/smarttender-fonts/blob/main/dist/demo.html#/bored" target="_blank">Результат</a>**
 
@@ -20,11 +20,11 @@ $ npm run generate
 
 + **`dist`** содержит готовые шрифты и стили
     - **`fonts`** готовые шрифты
-        - `SmarttenderFont.eot`
-        - `SmarttenderFont.svg`
-        - `SmarttenderFont.ttf`
-        - `SmarttenderFont.woff`
-        - `SmarttenderFont.woff2`
+        - `SvgFont.eot`
+        - `SvgFont.svg`
+        - `SvgFont.ttf`
+        - `SvgFont.woff`
+        - `SvgFont.woff2`
     - `styles`стили иконок
         - `icons.css`
         - `icons.json` используется в storybook
