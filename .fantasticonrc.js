@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'SmarttenderFont',
+  name: 'SvgFont',
   prefix: 'smt-icon',
   inputDir: './icons',
   outputDir: './dist/fonts',
